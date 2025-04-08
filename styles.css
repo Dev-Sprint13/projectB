@@ -39,7 +39,6 @@ header {
   width: 40%;
   white-space: nowrap;
   min-height: 90vh;
-  padding: 2rem 0 0 0 ;
 }
 
 .AsidePro {
@@ -377,7 +376,7 @@ h3 {
 
 .desc_nav_elm .vertical-line {
   width: 0.1px;
-  height: 350px;
+  height: 360px;
   background-color: #383838;
   margin-left: 1.2rem;
   position: absolute;
@@ -490,6 +489,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap:1.2rem;
 }
 .parcour .parcours_desc {
   white-space: nowrap;
@@ -927,6 +927,9 @@ form button img {
   form {
     margin: 0 auto;
     width: 100%;
+  }
+  form input::placeholder {
+    font-family: var(--police);
   }
 
   .desc_nav_elm .vertical-line {

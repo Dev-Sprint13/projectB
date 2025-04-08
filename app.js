@@ -64,8 +64,8 @@ sendMailForm.addEventListener('submit', (e) => {
     const myMail = "victoirelucngami@gmail.com";
 
     const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(myMail)}&su=${encodeURIComponent(object)}&body=Salut, je suis ${encodeURIComponent(full_name)}, j'ai besoin de ${encodeURIComponent(message)}`;
-
-    window.open(gmailLink, "_blank");
+    window.open(gmailLink,"_blank");
+    
 });
 
 voir_plus.addEventListener('click',()=>{
