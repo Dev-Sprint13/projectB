@@ -651,7 +651,7 @@ form button img {
   display: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 834px) {
   main {
     justify-content: center;
     align-items: flex-start;
