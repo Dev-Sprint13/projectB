@@ -8,12 +8,13 @@ const links = document.querySelectorAll('.sec-nav a');
 const voir_plus = document.getElementById('voir_plus');
 const AsideProfile = document.getElementById('AsideProfile');
 const ProInfos = document.getElementById('ProInfos');
+
+
 function ShowSection(id) {
     const sections = document.querySelectorAll(".sec_presentation .anchor_content");
     sections.forEach((sec) => {
         sec.style.display = "none";
     });
-
     document.getElementById(id).style.display = "block";
 }
 
