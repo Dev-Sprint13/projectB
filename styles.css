@@ -575,16 +575,17 @@ h3 {
 .pro_cont img{
   object-fit: cover;
   width: 100%;
-  height: 70%;	
+  height: 80%;	
   border-radius: 5px;
 }
 
-.pro_cont .pro-tout, .pro-app, .pro-web{
+.pro_cont .pro-tout .img_descPro, .pro-app .img_descPro, .pro-web .img_descPro{
   display: flex;
   flex-direction:column;
-  gap:1rem;
+  justify-content: space-between;
+  gap:2rem;
   /* width:3rem; */
-  padding: 1rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
   text-align: center;
   border-radius: 20px;
   color: white;
@@ -592,7 +593,35 @@ h3 {
   /* border:1px solid white; */
 }
 
-/*===Contact===*/
+  .pro_cont a{
+    color:white;
+    text-decoration: none;
+  }
+
+  .pro_cont .pro-tout:hover > .glass_eye, .pro-app:hover > .eye, .pro-web:hover > .eye{
+    transform: translateY(-12rem);
+    visibility: visible;
+  }
+
+  .pro_cont .eye{
+    width: 2rem;
+    height: 2rem;
+    translate:(50%, 50%);
+  }
+
+  .glass_eye{
+    visibility: hidden;
+    margin: 0 auto;
+    width: 3rem;
+    height: 3rem;
+    transition: transform 0.5s ease;
+    padding:0.5rem;
+    background: rgba(255, 255, 255, 0.1); /* Couleur avec transparence */
+    backdrop-filter: blur(2px);  
+    border-radius: 90%;
+  }
+
+  /*===Contact===*/
 .myform {
   gap: 2rem;
   margin-top: 3rem;
