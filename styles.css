@@ -367,7 +367,12 @@ h3 {
   gap: 1rem;
 }
 
+.tools_img img:not(#tailwind){
+  object-fit: cover;
+}
+
 .tools_img img {
+  
   background: #212123;
   height: 3.5rem;
   width: 3.7rem;
@@ -582,8 +587,7 @@ h3 {
 .pro_cont .pro-tout .img_descPro, .pro-app .img_descPro, .pro-web .img_descPro{
   display: flex;
   flex-direction:column;
-  justify-content: space-between;
-  gap:2rem;
+  gap:1rem;
   /* width:3rem; */
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   text-align: center;
