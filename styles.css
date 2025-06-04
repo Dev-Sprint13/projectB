@@ -594,8 +594,10 @@ h3 {
   border-radius: 20px;
   color: white;
   background: #212123;
+  min-height: 10vh;
   /* border:1px solid white; */
 }
+
 
   .pro_cont a{
     color:white;
